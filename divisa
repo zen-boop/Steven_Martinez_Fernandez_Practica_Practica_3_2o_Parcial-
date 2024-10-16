@@ -1,4 +1,5 @@
 d={'euro': '€', 'dollar': '$', 'yen': '¥'}#crea y define el diccionario
+print("las divisas disponibles son euro, dollar, yen coloque cualquiera en minusculas")#da una instruccion
 di=input("Introduce una divisa: ");print("")#hace posible modificar dal instruccion de cuando y separa
 while di!="salir":
     if di in d:#si "di" esta en "d" se raliza lo de abajo
