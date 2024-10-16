@@ -1,0 +1,11 @@
+d={'euro': '€', 'dollar': '$', 'yen': '¥'}#crea y define el diccionario
+di=input("Introduce una divisa: ");print("")#hace posible modificar dal instruccion de cuando y separa
+while di!="salir":
+    if di in d:#si "di" esta en "d" se raliza lo de abajo
+        print(f"El símbolo de {di} es {d[di]}")#la f hace posible poner variables con los {} imprime la divisa y separa
+    elif di=="salir":#si "di" es igual a "salir" se ejecuta lo de abajo
+        print("adios")#coloca adios
+        break#rompe y/o termina el programa
+    else:#si no se cumple nada de lo anterior se realiza esto
+        print("La divisa no está en el diccionario o esta en mayusculas")#da el error
+    di = input("Introduce una divisa: ");print("")#hace posible modificar dal instruccion de cuando y separa
