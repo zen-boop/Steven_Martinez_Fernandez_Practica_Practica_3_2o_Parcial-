@@ -1,0 +1,11 @@
+n = input("¿Cuál es tu nombre? ")#pide el nombre
+e = input("¿Cuántos años tienes? ")#pide la edad
+d = input("¿Cuál es tu dirección? ")#pide la direccion
+t = input("¿Cuál es tu número de teléfono? ")#pide el numero de telefono
+i = {#creea y abre el diccionario
+    "nombre": n,#guarda el numbre
+    "edad": e,#guarda la edad
+    "direccion": d,#guarda la direccion
+    "telefono": t#guarta el telefono
+}#cierra el diccionario
+print(f"{i['nombre']} tiene {i['edad']} años, vive en {i['direccion']} y su número de teléfono es {i['telefono']}.")#imprime el diccionario
