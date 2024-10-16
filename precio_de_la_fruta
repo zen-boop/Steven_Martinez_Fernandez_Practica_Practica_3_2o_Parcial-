@@ -1,0 +1,21 @@
+f=""#define f como str y añade valor de nada para no causar error
+while f!="salir":#se repetira hasta que "f" sea diferente de "salir"
+    pf={#creea y abre el diccionario
+        "manzana": 50.50,#asigna valor
+        "banana": 52.60,#asigna valor
+        "naranja": 50.40,#asigna valor
+        "pera": 58.99,#asigna valor
+        "uva": 20.0#asigna valor
+    }#cierra el diccionario
+    print("las frutas disponibles son: manzana,banana,naranja,pera y uva")#te dice las frutas disponibles
+    print('en caso de querer iret coloca "salir"')#da una insrtuccion
+    f=input("¿Qué fruta deseas comprar? ").lower();print("")#hace posible modificar da una instuccion hace que solo se pongan en minusculas y separa
+    if f=="salir":#si "f" es igual a "salir" se realiza la instruccion
+        print("que tenga un buen dia")#imprime el mensaje de salida
+        break#rompe el while
+    k=float(input("¿Cuántos kilos deseas comprar? "));print("")#hace posible modificar da una instuccion define com float y separa
+    if f in pf:#si "f" esta en "pf"se realiza
+        pt=pf[f]*k#se realiza la operacion
+        print(f"El precio de total es {pt} pesos.");print("")#imprime el resultado y separa
+    else:#en caso de que no se cumpla se realiza esto
+        print("Lo siento, no tenemos esa fruta ")#da una instruccion en caso de error
